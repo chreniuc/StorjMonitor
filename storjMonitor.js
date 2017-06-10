@@ -30,6 +30,8 @@ daemon.on('remote', (rpc) => {
       }).end(); 
       
       */
+      
+      //Check here fot the complete share object https://pastebin.com/ppepiuiY , This is an example output of object share
       console.log(share.id+'\n'+JSON.stringify(share.meta, null, 4));// share.id for node id
     });
    daemon.end();
