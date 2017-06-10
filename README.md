@@ -12,4 +12,11 @@ cd StorjMonitor
 npm install dnode
 node storjMonitor.js
 ```
+Now add a cronjob , each hour at :55
+```
+# env > ~/.env
+# crontab -e
+In cron add: 
+55 * * * * node /path/to/StorjMonitor/storjMonitor.js >> /dev/null 2>&1
+```
 
