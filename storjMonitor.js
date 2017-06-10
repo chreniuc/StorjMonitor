@@ -12,7 +12,7 @@ daemon.on('remote', (rpc) => {
   rpc.status(function(err, shares) {
     shares.forEach((share) => {
       options ={
-        host: 'www.storjshare.me',
+        host: 'www.site.me',
         path: '/apiNode.php?token='+token+'&node='+share.id+'&space='+share.meta.farmerState.spaceUsed+'&state='+share.state
       };
       http.request(options, function(response) {
@@ -26,7 +26,7 @@ daemon.on('remote', (rpc) => {
           console.log(str);
         });
       }).end();
-      console.log(JSON.stringify(shares, null, 4));
+      console.log(JSON.stringify(share, null, 4));
     });
    daemon.end();
   });
