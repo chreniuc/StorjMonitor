@@ -5,6 +5,7 @@
 const dnode = require('dnode');
 const http = require('http');
 const daemon = dnode.connect(45015);
+//Put here your token
 var token = "Tokenid";
 var options;
 daemon.on('remote', (rpc) => {
@@ -25,7 +26,7 @@ daemon.on('remote', (rpc) => {
           console.log(str);
         });
       }).end();
-      console.log(JSON.stringify(options, null, 4));
+      console.log(JSON.stringify(shares, null, 4));
     });
    daemon.end();
   });
