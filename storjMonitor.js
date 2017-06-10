@@ -30,7 +30,7 @@ daemon.on('remote', (rpc) => {
       }).end(); 
       
       */
-      console.log(JSON.stringify(share.meta, null, 4));// share.id for node id
+      console.log(share.id+'\n'+JSON.stringify(share.meta, null, 4));// share.id for node id
     });
    daemon.end();
   });
