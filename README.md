@@ -20,3 +20,5 @@ In cron add:
 55 * * * * node /path/to/StorjMonitor/storjMonitor.js >> /dev/null 2>&1
 ```
 
+The complete json object that you can get looks like this(https://pastebin.com/ppepiuiY) Here is only one node, but there can be more.
+
